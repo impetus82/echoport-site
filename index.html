@@ -7,7 +7,7 @@
     <meta name="description" content="EchoPortVPN - надежный VPN-сервис с управлением через Telegram. Анонимность, скорость и доступ к контенту без ограничений.">
     
     <!-- Подключаем Tailwind CSS через CDN для прототипа -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com" defer></script>
     
     <!-- Подключаем шрифты из Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Настройка Tailwind CSS -->
-    <script>
+    <script defer>
         tailwind.config = {
             theme: {
                 extend: {
@@ -100,7 +100,7 @@
                 <!-- Хедер с логотипом -->
                 <header class="mb-12">
                     <div class="flex items-center space-x-3">
-                        <img src="https://i.imgur.com/AKA2mMV.png" alt="EchoPortVPN Logo" class="h-12 w-auto">
+                        <img src="images/logo.png" alt="EchoPortVPN Logo" class="h-12 w-auto">
                         <div class="flex flex-col">
                             <h1 class="font-bold text-2xl">EchoPortVPN</h1>
                             <span class="text-text-muted text-sm">echoport.ru</span>
