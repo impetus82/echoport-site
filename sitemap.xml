@@ -7,3 +7,10 @@
     <priority>1.0</priority>
   </url>
 </urlset>
+
+<url>
+  <loc>https://echoport.ru/privacy-policy.html</loc>
+  <lastmod>2025-05-03</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>

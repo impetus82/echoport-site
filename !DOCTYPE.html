@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Политика конфиденциальности - EchoPortVPN</title>
+    <meta name="description" content="Политика конфиденциальности EchoPortVPN - информация о том, как мы собираем и защищаем ваши данные.">
+    
+    <!-- Подключаем Tailwind CSS через CDN для прототипа -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Подключаем шрифты из Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Настройка Tailwind CSS -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        background: {
+                            dark: '#171923',
+                            darker: '#111319',
+                        },
+                        accent: {
+                            blue: '#0096FF',
+                            darkBlue: '#0A3D62',
+                        },
+                        text: {
+                            light: '#E9ECEF',
+                            muted: '#A0AEC0',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <!-- Базовые стили -->
+    <style>
+        body {
+            background-color: #171923;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        
+        .wave-bg {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 40%;
+            background-repeat: no-repeat;
+            background-position: right center;
+            opacity: 0.4;
+            z-index: 0;
+            pointer-events: none;
+        }
+        
+        .container-custom {
+            max-width: 1100px;
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .card {
+            background-color: #1A202C;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+        }
+        
+        .back-btn {
+            color: #0096FF;
+            transition: all 0.2s ease;
+        }
+        
+        .back-btn:hover {
+            color: #0084E3;
+            text-decoration: underline;
+        }
+    </style>
+    <!-- Favicon -->
+    <link rel="icon" sizes="192x192" href="/favicon/android-chrome-192x192.png">
+    <link rel="icon" sizes="512x512" href="/favicon/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#0A3D62">
+    <meta name="theme-color" content="#0A3D62">
+</head>
+
+<body class="font-sans text-text-light">
+    <!-- Фоновые волны -->
+    <div class="wave-bg" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjkwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjUwIDgwMGMtNTAgMC0xMDAtMzAwLTE1MC00MDBtmmc2MBzMCA1MCAyMDBzMTAwIDQwMCAxNTAgNTAwIDUwLTEwMCA1MC0yMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwOTZGRiIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIuMiIvPjxwYXRoIGQ9Ik0zMDAgNjAwYy0zMCAwLTgwLTIwMC0xMjAtMzAwcy04MC0xMDAtMzAtNTAgNjAgMjAwIDEwMCAzMDAgNTAtNTAgNTAtMTAwIiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDk2RkYiIHN0cm9rZS13aWR0aD0iMi41IiBvcGFjaXR5PSIuMyIvPjwvc3ZnPg==');"></div>
+    
+    <div class="min-h-screen flex flex-col">
+        <!-- Основной контейнер с картой -->
+        <div class="container-custom px-4 py-8 flex-grow">
+            <div class="card p-8 md:p-12">
+                <!-- Хедер с логотипом и навигацией -->
+                <header class="mb-8">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-3">
+                            <img src="images/logo.png" alt="EchoPortVPN Logo" class="h-12 w-auto">
+                            <div class="flex flex-col">
+                                <h1 class="font-bold text-2xl">EchoPortVPN</h1>
+                                <span class="text-text-muted text-sm">echoport.ru</span>
+                            </div>
+                        </div>
+                        <a href="/" class="back-btn flex items-center">
+                            <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                            </svg>
+                            На главную
+                        </a>
+                    </div>
+                </header>
+                
+                <!-- Основная секция с политикой конфиденциальности -->
+                <main>
+                    <section class="mb-12">
+                        <h2 class="text-3xl font-bold mb-6">Политика конфиденциальности</h2>
+                        <p class="text-text-muted mb-2">Последнее обновление: 3 мая 2025 г.</p>
+                        
+                        <div class="space-y-6 mt-8">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-3">1. Введение</h3>
+                                <p class="text-text-light">EchoPortVPN ("мы", "нас" или "наш") обязуется защищать вашу конфиденциальность. Настоящая Политика конфиденциальности объясняет, как мы собираем, используем и защищаем вашу информацию при использовании нашего VPN-сервиса (далее "Сервис"), доступного через наш веб-сайт echoport.ru и Telegram-бота.</p>
+                            </div>
+                            
+                            <div>
+                                <h3 class="text-xl font-semibold mb-3">2. Информация, которую мы собираем</h3>
+                                <div class="pl-4 space-y-4">
+                                    <div>
+                                        <h4 class="font-semibold">2.1 Информация, которую вы предоставляете</h4>
+                                        <ul class="list-disc pl-6 text-text-light">
+                                            <li>Ваш Telegram ID и имя пользователя для работы с нашим ботом</li>
+                                            <li>Информация о платежах (при приобретении подписки)</li>
+                                            <li>Информация, которую вы предоставляете при общении с нашей службой поддержки</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div>
+                                        <h4 class="font-semibold">2.2 Информация, собираемая автоматически</h4>
+                                        <ul class="list-disc pl-6 text-text-light">
+                                            <li>Информация о сессиях: даты подключения и отключения, объем переданных данных</li>
+                                            <li>Информация о серверах, к которым вы подключаетесь</li>
+                                            <li>Статистика использования для обеспечения работы и улучшения Сервиса</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h3 class="text-xl font-semibold mb-3">3. Политика "Отсутствия логирования"</h3>
+                                <p class="text-text-light">Мы строго придерживаемся политики "Отсутствия логирования". Это означает, что мы <strong>не храним</strong>:</p>
+                                <ul class="list-disc pl-10 text-text-light">
+                                    <li>Историю вашего просмотра или другую активность, выполняемую через наш Сервис</li>
+                                    <li>IP-адреса, с которых вы подключаетесь к нашему Сервису</li>
+                                    <li>Содержание любых данных или коммуникаций, которые вы отправляете через наш Сервис</li>
+                                    <li>DNS-запросы, сделанные через нашу VPN-сеть</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h3 class="text-xl font-semibold mb-3">4. Использование информации</h3>
+                                <p class="text-text-light">Мы используем собранную информацию для:</p>
+                                <ul class="list-disc pl-10 text-text-light">
+                                    <li>Предоставления, поддержки и улучшения нашего Сервиса</li>
+                                    <li>Обработки платежей и управления вашей учетной записью</li>
+                                    <li>Связи с вами по вопросам технической поддержки, обновлений и уведомлений о безопасности</li>
+                                    <li>Обеспечения безопасности и защиты нашей сети</li>
+                                    <li>Соблюдения юридических обязательств</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h3 class="text-xl font-semibold mb-3">5. Обмен информацией</h3>
+                                <p class="text-text-light">Мы не продаем, не обмениваем и не передаем вашу личную информацию третьим сторонам, за исключением следующих случаев:</p>
+                                <ul class="list-disc pl-10 text-text-light">
+                                    <li>С поставщиками услуг, которые помогают нам в работе Сервиса (например, обработка платежей)</li>
+                                    <li>Если требуется по закону, судебному процессу или для защиты наших законных интересов</li>
+                                </ul>
+                                <p class="text-text-light mt-3">Любые третьи стороны, с которыми мы делимся данными, связаны соглашениями о конфиденциальности и обязуются защищать вашу информацию.</p>
+                            </div>
+                            
+                            <div>
+                                <h3 class="text-xl font-semibold mb-3">6. Безопасность данных</h3>
+                                <p class="text-text-light">Мы применяем отраслевые стандарты и лучшие практики для защиты вашей информации, включая:</p>
+                                <ul class="list-disc pl-10 text-text-light">
+                                    <li>Шифрование данных при передаче и хранении</li>
+                                    <li>Регулярные проверки безопасности наших систем</li>
+                                    <li>Строгие меры контроля доступа к данным</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h3 class="text-xl font-semibold mb-3">7. Ваши права</h3>
+                                <p class="text-text-light">В зависимости от вашего местоположения, у вас могут быть следующие права в отношении ваших данных:</p>
+                                <ul class="list-disc pl-10 text-text-light">
+                                    <li>Доступ к информации, которую мы храним о вас</li>
+                                    <li>Исправление неточных или неполных данных</li>
+                                    <li>Удаление ваших данных (Право на забвение)</li>
+                                    <li>Ограничение обработки ваших данных</li>
+                                    <li>Возражение против обработки ваших данных</li>
+                                </ul>
+                                <p class="text-text-light mt-3">Для реализации любого из этих прав, пожалуйста, свяжитесь с нами через нашего Telegram-бота или по электронной почте support@echoport.ru.</p>
+                            </div>
+                            
+                            <div>
+                                <h3 class="text-xl font-semibold mb-3">8. Изменения в Политике конфиденциальности</h3>
+                                <p class="text-text-light">Мы можем обновлять нашу Политику конфиденциальности время от времени. Мы уведомим вас о любых существенных изменениях через Telegram-бота или электронную почту. Рекомендуем периодически проверять эту страницу для ознакомления с последней версией нашей Политики.</p>
+                            </div>
+                            
+                            <div>
+                                <h3 class="text-xl font-semibold mb-3">9. Контакты</h3>
+                                <p class="text-text-light">Если у вас есть вопросы или озабоченности относительно этой Политики конфиденциальности или обработки ваших данных, пожалуйста, свяжитесь с нами:</p>
+                                <ul class="list-none pl-4 text-text-light mt-2">
+                                    <li>Через Telegram-бот: <a href="https://t.me/EchoPort_bot" class="text-accent-blue hover:underline">@EchoPort_bot</a></li>
+                                    <li>По электронной почте: <a href="mailto:support@echoport.ru" class="text-accent-blue hover:underline">support@echoport.ru</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+                
+                <!-- Подвал (Footer) -->
+                <footer class="border-t border-gray-700 pt-6 mt-10">
+                    <div class="flex flex-col md:flex-row justify-between items-center">
+                        <div class="mb-4 md:mb-0">
+                            <p class="text-text-muted text-sm">© EchoPortVPN 2025</p>
+                        </div>
+                        <div class="flex space-x-6">
+                            <a href="/" class="text-text-muted hover:text-text-light text-sm">Главная</a>
+                            <a href="/privacy-policy.html" class="text-text-muted hover:text-text-light text-sm">Политика конфиденциальности</a>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
